@@ -1,0 +1,82 @@
+Intro
+  What this book is for
+  Types of performance
+    Speed/latency
+    Memory
+    Code size
+
+Specific optimizations
+  Tuning build options
+    Cargo profiles
+    rustc options (opt-level, lto, panic=abort, codegen-units)
+    jemalloc
+  Measurement
+    Profilers
+      perf
+      calltree/kcachegrind
+      Instruments
+      Visual Studio
+    Instrumentation
+      std::time::Instant
+    Measuring memory use?
+    Benchmarks
+      stable/unstable
+        external benchmarks
+          inlining
+      black_box
+    Theoretical limits
+      memory/disk/network bandwidth
+  Machine types, memory layout
+    fixed-sized versus pointer-sized ints
+    f32 versus f64
+    struct/enum packing
+  Avoid algorithmic blowup
+    Pre-allocating
+      behavior of repeated push/append
+      use .collect()
+  Iterating
+    avoiding bounds checks
+  Static dispatch
+    trait objects
+      example: effect of dynamic dispatch on Iterator
+  Allocation
+    which operations allocate?
+    which operations clone data?
+      unique versus shared ownership
+    ways to avoid allocation
+      pre-allocating
+        with_capacity(), collect()
+      re-using buffers
+      borrowing intsead of cloning
+        zero-copy
+        copy-on-write
+        &Trait instead of Box<Trait>
+        &T instead of Rc<T> or Arc<T>
+  Data structures
+    vectors, lists, arrays, deques
+      smallvec
+    maps/sets
+      custom hashers
+  Threads
+    channels
+    scoped threads
+    atomics, locks
+    avoiding overhead in single-threaded code
+    libraries
+      parking_lot
+      rayon
+      crossbeam
+  Async I/O
+
+Test cases
+  JSON processing
+    Parser library
+      Benchmarking
+      Inlining
+      Buffered I/O
+      Zero-copy, COW
+      Avoid UTF-8 validation
+      Streaming versus in-memory
+    Tree traversal and computation
+      Paralellization
+        Multiple files?
