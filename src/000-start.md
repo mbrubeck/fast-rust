@@ -2,10 +2,12 @@
 
 by <a rel="author" href="https://limpet.net/mbrubeck">Matt Brubeck</a>
 
+## About
+
 This is a work-in-progress book about how to write fast and efficient programs
 with the [Rust programming language][rust].  To begin reading, use the arrow
-to the right, the table of contents to the left, or the arrow keys on your
-keyboard to navigate between chapters.
+button on this page, the table of contents to the left, or the arrow keys on
+your keyboard to navigate between chapters.
 
 ## Contributing
 
