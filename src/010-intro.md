@@ -36,11 +36,11 @@ making the code or data smaller can save time as well as space: Smaller data
 takes less time to transfer between disk, memory, and CPU; it is also more
 likely to fit into the CPU's fast caches.
 
-But sometimes we have to trade efficiency in one resource for inefficiency in
-another.  For example, storing previously-computed results in a cache can
-make a program faster, but it also requires more RAM or disk space.  Using
-multiple threads running in parallel might make a program finish faster but
-also consume more total CPU cycles (which could otherwise be used by other
+But sometimes, efficiency in one resource comes at the cost of inefficiency in
+another.  For example, storing previously-computed results in a cache can make
+a program faster, but it also requires more RAM or disk space.  Using multiple
+threads running in parallel might make a program finish faster but also
+consume more total CPU cycles (which could otherwise be used by other
 processes running on the same system).
 
 Because of these trade-offs, it's important to know *why* you are optimizing
@@ -68,14 +68,14 @@ instead it is often a means to an end.  The real objective might be one of these
 It's important to know what you are really trying to optimize so you can
 choose the right measuments and benchmarks to guide your work.
 
-## What this book isn't for
+## What this book isn't
 
 I called this book *Writing Fast Rust Programs* because it's for people who
 are trying to do just that.  However, it can’t teach you everything you need to
-reach that goal.  It will focus on the performance impact of specific Rust
-language and library features, so you can avoid needless overhead from using
-them the wrong way.  (*Not Writing Terribly Slow Rust Programs* might be a
-more accurate but less catchy title.)
+reach that goal.  Mostly it will teach about the performance impact of
+specific Rust language and library features, so you can avoid needless
+overhead from using them the wrong way.  (*Not Writing Terribly Slow Rust
+Programs* might be a more accurate but less catchy title.)
 
 If you want to write the *most efficient program in the world* to solve a
 given problem, you'll need more than just a solid understanding of your
