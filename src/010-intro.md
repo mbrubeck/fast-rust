@@ -68,7 +68,7 @@ instead it is often a means to an end.  The real objective might be one of these
 It's important to know what you are really trying to optimize so you can
 choose the right measuments and benchmarks to guide your work.
 
-## What this book isn't
+## What this book isn’t
 
 I called this book *Writing Fast Rust Programs* because it's for people who
 are trying to do just that.  However, it can’t teach you everything you need to
