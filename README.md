@@ -1,7 +1,5 @@
 # Writing Fast Rust Programs
 
-by <a rel="author" href="https://limpet.net/mbrubeck">Matt Brubeck</a>
-
 This is a work-in-progress book about how to write fast and efficient programs
 with the [Rust programming language][rust].  See [src/000-start.md][start] for more information.
 

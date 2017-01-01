@@ -19,7 +19,7 @@ time.
 
 ## What is optimization?
 
-*Optimizing* a program means making it do the same thing with fewer resources.
+Optimizing a program means making it do the same thing with fewer resources.
 These “resources” can be a variety of things, including:
 
 * Time
