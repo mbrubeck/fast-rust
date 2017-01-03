@@ -114,13 +114,20 @@ impl Parser {
                     't' => s.push('\t'),
                     'b' => s.push('\u{10}'),
                     'f' => s.push('\u{14}'),
-                    'u' => unimplemented!(),
+                    'u' => s.push(std::char::from_u32(self.parse_hex_digit()? << 12 |
+                                                      self.parse_hex_digit()? << 8 |
+                                                      self.parse_hex_digit()? << 4 |
+                                                      self.parse_hex_digit()?).ok_or(ParseError)?),
                     _ => return Err(ParseError)
                 },
                 x => s.push(x)
             }
         }
         Ok(Value::String(s))
+    }
+
+    fn parse_hex_digit(&mut self) -> ParseResult<u32> {
+        self.next()?.to_digit(16).ok_or(ParseError)
     }
 
     fn parse_number(&mut self) -> ParseResult<Value> {
