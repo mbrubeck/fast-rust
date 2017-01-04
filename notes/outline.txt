@@ -59,10 +59,13 @@ Specific optimizations
         &Trait instead of Box<Trait>
         &T instead of Rc<T> or Arc<T>
   Data structures
-    vectors, lists, arrays, deques
+    vectors, slices, lists, arrays, deques
       smallvec
     maps/sets
       custom hashers
+    strings
+      UTF-8, indexing, iterating
+      str vs. [char] vs. [u8]
   Threads
     channels
     scoped threads
