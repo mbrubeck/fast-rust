@@ -14,7 +14,10 @@ Specific optimizations
     Profilers
       perf
       calltree/kcachegrind
+        https://llogiq.github.io/2015/07/15/profiling.html
+        https://athemathmo.github.io/2016/09/14/tools-for-profiling-rust.html
       Instruments
+        http://carol-nichols.com/2015/12/09/rust-profiling-on-osx-cpu-time/
       Visual Studio
     Instrumentation
       std::time::Instant
