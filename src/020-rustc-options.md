@@ -28,7 +28,7 @@ cargo doc   # uses the `doc` profile
 
 These profiles have optimization enabled by default:
 
-```
+```sh
 cargo build --release # uses the `release` profile
 cargo bench           # uses the `bench` profile
 ```
