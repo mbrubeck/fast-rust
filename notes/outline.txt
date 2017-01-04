@@ -22,6 +22,9 @@ Specific optimizations
     Instrumentation
       std::time::Instant
     Measuring memory use?
+    Measuring code size
+      bloaty
+      size(1)
     Benchmarks
       stable/unstable
         external benchmarks

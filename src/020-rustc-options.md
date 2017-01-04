@@ -59,10 +59,6 @@ sections of the `Cargo.toml` file.
 
 TODO
 
-### opt-level
-
-TODO
-
 ### codegen-units
 
 TODO
