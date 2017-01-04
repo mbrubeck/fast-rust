@@ -60,18 +60,19 @@ Specific optimizations
         &T instead of Rc<T> or Arc<T>
   Data structures
     vectors, slices, lists, arrays, deques
-      smallvec
+      smallvec crate
     maps/sets
       custom hashers
     strings
       UTF-8, indexing, iterating
       str vs. [char] vs. [u8]
+      regex crate
   Threads
     channels
     scoped threads
     atomics, locks
     avoiding overhead in single-threaded code
-    libraries
+    crates
       parking_lot
       rayon
       crossbeam
