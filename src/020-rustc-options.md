@@ -57,7 +57,35 @@ sections of the `Cargo.toml` file.
 
 ### opt-level
 
-TODO
+This controls which types of optimization the compiler performs.
+
+`opt-level = 0` disables optimization.  This is the default for non-release
+builds and for the `test` profile.
+
+`opt-level = 1` performs a limited amount of optimization, but disables
+optimization passes that are most likely to interfere with debugging.  If
+you want your development builds or unit tests to run faster, and don't mind
+them taking a little longer to compile, it can be useful to bump the `dev` or
+`test` profiles up to this level:
+
+```toml
+[profile.dev]
+opt-level = 1
+
+[profile.test]
+opt-level = 1
+```
+
+`opt-level = 2` and `opt-level = 3` optimize the code for speed.  `3` is the
+default for release builds, and optimizes the most aggressively for speed,
+possibly at the cost of generating larger code and taking more time.
+
+`opt-level = "s"` and `opt-level = "z"` optimize for code size.  `"z"` is more
+aggressive at reducing the size of the compiled code, at the cost of
+generating slower code.  These are currently [experimental options][gh35784]
+available in nightly builds.  Their names might change in future versons.
+
+[gh35784]: https://github.com/rust-lang/rust/issues/35784
 
 ### codegen-units
 
