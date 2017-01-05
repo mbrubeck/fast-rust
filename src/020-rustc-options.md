@@ -139,7 +139,7 @@ The Rust compiler has many options that don't have corresponding keys in the
 `Cargo.toml` file.  When you are building a Cargo project, you can pass extra
 options by setting the `RUSTFLAGS` environment variable or setting the
 `build.rustflags` or `target.<triple>.rustflags` key in a
-[.cargo/config](config) file.
+[.cargo/config][config] file.
 
 Like the `[profile.*]` sections in the manifest, `.cargo/config` files from
 dependencies are ignored.  Only the top-level crate's config file is used.
