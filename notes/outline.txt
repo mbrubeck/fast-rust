@@ -9,6 +9,7 @@ Specific optimizations
   Tuning build options
     Cargo profiles
     rustc options (opt-level, lto, panic=abort, codegen-units)
+      target-cpu = native
     jemalloc
   Measurement
     Profilers
