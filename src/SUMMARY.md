@@ -4,3 +4,5 @@
 
 - [Introduction](010-intro.md)
 - [Compiler Settings](020-rustc-options.md)
+    - [Cargo profiles](021-cargo-profile.md)
+    - [rustc flags](022-rustflags.md)
