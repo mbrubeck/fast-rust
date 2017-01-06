@@ -86,11 +86,38 @@ lto = true
 
 ### codegen-units
 
-TODO
+By default, rustc passes each crate code to the LLVM optimizer as a single
+unit.  This is good for optimization, but it also means that the optimizer
+only uses a single core for each crate it is compiling.
+
+Increasing `codegen-units` from its default value of 1 tells rustc to split
+the crate into multiple units and then performing LLVM code-generation and
+optimization on all units in parallel.  This can reduce build times, but it
+can also make the generated code perform worse.  Because of this, it's not
+usually a good idea to do this in release builds, but it might be worthwhile
+for optimized debug builds:
+
+```toml
+[profile.dev]
+opt-level = 1
+codegen-units = 4
+```
 
 ### debug
 
-TODO
+This option tells the compiler to emit information that helps debuggers and
+profilers produce more human-friendly output.  This increases the size of the
+compiled program, so by default it is not enabled for release.  You might want
+to enable it temporarily while debugging a problem that shows up only in
+release builds, or if when running release builds or benchmarks in a profiler.
+
+```toml
+[profile.release]
+debug = true
+
+[profile.bench]
+debug = true
+```
 
 ### debug-assertions
 
