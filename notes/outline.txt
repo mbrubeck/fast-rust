@@ -33,6 +33,13 @@ Specific optimizations
       black_box
     Theoretical limits
       memory/disk/network bandwidth
+  Understanding costs of common operations
+    disk/network I/O
+    memory bandwidth
+    cache sizes
+    function call overhead
+      inlining, LTO
+    CPU instructions
   Machine types, memory layout
     fixed-sized versus pointer-sized ints
     f32 versus f64
@@ -40,6 +47,7 @@ Specific optimizations
   Optimizing code size
     opt-level
     lto
+      cross-language LTO with LLVM bitcode?
   Avoid algorithmic blowup
     Pre-allocating
       behavior of repeated push/append
