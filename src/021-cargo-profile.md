@@ -22,7 +22,7 @@ You can customize the compiler options for each command in the [profile]
 sections of the Cargo manifest (`Cargo.toml`).
 
 **Note:** When you build a project that includes several crates as
-depenencies, Cargo only uses profile sections from the manifest of the
+dependencies, Cargo only uses profile sections from the manifest of the
 top-level crate (the one where you are running the `cargo build` command).
 When you build an application that depends on external libraries, the
 application’s `Cargo.toml` (and not its dependencies’) is in full control of
