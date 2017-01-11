@@ -1,7 +1,9 @@
 # Writing Fast Rust Programs
 
 This is a work-in-progress book about how to write fast and efficient programs
-with the [Rust programming language][rust].  See [src/000-start.md][start] for more information.
+with the [Rust programming language][rust].  See [src/000-start.md][start] for
+more information, or [src/SUMMARY.md][toc] to read the current (very
+incomplete) draft.
 
 ## Building
 
@@ -21,7 +23,8 @@ Open the generated `book/index.html` file in your web browser to view the output
 
 See the [mdBook documentation] for more details
 
-[start]: src/000-start.md
 [rust]: https://www.rust-lang.org/
+[start]: src/000-start.md
+[toc]: src/SUMMARY.md
 [mdBook]: https://github.com/azerupi/mdBook
 [mdBook documentation]: http://azerupi.github.io/mdBook/README.html
