@@ -27,13 +27,20 @@ Specific optimizations
       bloaty
       size(1)
     Benchmarks
+      general advice
+        system environment
+          hardware
+          power saving
+          other programs
+          caches
+        statistics
+          outliers
       stable/unstable
         external benchmarks
           inlining
       black_box
-    Theoretical limits
-      memory/disk/network bandwidth
   Understanding costs of common operations
+    bottlenecks
     disk/network I/O
     memory bandwidth
     cache sizes
