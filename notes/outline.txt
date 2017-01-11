@@ -86,6 +86,7 @@ Specific optimizations
       UTF-8, indexing, iterating
       str vs. [char] vs. [u8]
       regex crate
+  Common micro-optimizations
   Threads
     channels
     scoped threads
