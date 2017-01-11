@@ -43,8 +43,8 @@ $ /usr/bin/time ./target/release/my_program
 
 In addition to the CPU time and elapsed time, this shows that the program's
 peak memory usage ([resident set size][rss]) was 6304 KB, and also some
-information about I/O and memory events.  See the [GNU time manual] for more
-information.
+information about I/O and memory events.  See the [GNU time manual][man time]
+for more information.
 
 (TODO: Instructions for Windows?)
 
