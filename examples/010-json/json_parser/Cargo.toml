@@ -1,7 +1,0 @@
-[package]
-name = "json_parser"
-version = "1.0.0"
-authors = ["Matt Brubeck <mbrubeck@limpet.net>"]
-
-[profile.release]
-debug = true
